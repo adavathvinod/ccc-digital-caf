@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import cccLogo from "@/assets/ccc-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
