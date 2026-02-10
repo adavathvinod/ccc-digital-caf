@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import cccLogo from "@/assets/ccc-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -36,9 +37,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-serif text-2xl md:text-3xl font-bold text-primary">
-            CCC
-          </span>
+          <img src={cccLogo} alt="CCC Logo" className="h-10 md:h-12 w-auto rounded-lg" />
           <span className="hidden sm:block text-sm text-cream/80 font-light">
             Chai Chakhna Company
           </span>
