@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Youtube, Phone, MapPin, Mail, Clock } from "lucide-react";
+import cccLogo from "@/assets/ccc-logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-3xl font-bold text-primary mb-4">CCC</h3>
+            <img src={cccLogo} alt="Chai Chakhna Company Logo" className="h-16 w-auto mb-4" />
             <p className="text-sm leading-relaxed mb-4">
               Chai Chakhna Company — Modern Indian café serving authentic chai, snacks,
               and fusion street food.
