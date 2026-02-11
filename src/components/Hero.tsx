@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import cccLogo from "@/assets/ccc-logo.png";
 
 const Hero = () => {
   return (
@@ -23,15 +22,6 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-4"
-        >
-          <img src={cccLogo} alt="CCC Logo" className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-2xl shadow-2xl mx-auto" />
-        </motion.div>
-
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
